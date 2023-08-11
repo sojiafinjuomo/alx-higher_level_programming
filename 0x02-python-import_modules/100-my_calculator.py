@@ -11,9 +11,14 @@ if __name__ == "__main__":
         a = int(sys.argv[1])
         0p = sys.argv[2]
         b = int(sys.argv[3])
-        if op not in ('+', '-', '*', '/'):
-            print("Unknown operator. Available operators: +, -, * and /")
-            sys.exit(1)
-        else:
-            result = int(a op b)
-            print("{} {} {} = {}".format(a, op, b, result))
+    if op != '+' and op != '-' and op != '*' and op != '/':
+        print("Unknown operator. Available operators: +, -, * and /")
+        sys.exit(1)
+    elif op = '+':
+        print("{} + {} = {}".format(a, b, add(a, b)))
+    elif op = '-':
+        print("{} - {} = {}".format(a, b, sub(a, b)))
+    elif op = '*':
+        print("{} * {} = {}".format(a, b, mul(a, b)))
+    else:
+        print("{} / {} = {}".format(a, b, div(a, b)))
