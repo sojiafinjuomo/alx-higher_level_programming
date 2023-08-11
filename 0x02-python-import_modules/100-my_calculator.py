@@ -9,16 +9,16 @@ if __name__ == "__main__":
         sys.exit(1)
     else:
         a = int(sys.argv[1])
-        0p = sys.argv[2]
+        op = sys.argv[2]
         b = int(sys.argv[3])
     if op != '+' and op != '-' and op != '*' and op != '/':
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
-    elif op = '+':
+    elif op == '+':
         print("{} + {} = {}".format(a, b, add(a, b)))
-    elif op = '-':
+    elif op == '-':
         print("{} - {} = {}".format(a, b, sub(a, b)))
-    elif op = '*':
+    elif op == '*':
         print("{} * {} = {}".format(a, b, mul(a, b)))
     else:
         print("{} / {} = {}".format(a, b, div(a, b)))
