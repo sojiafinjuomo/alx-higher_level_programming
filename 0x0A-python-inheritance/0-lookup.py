@@ -2,3 +2,4 @@
 def lookup(obj):
     """defines a lookup method"""
     a = dir(obj)
+    return a
