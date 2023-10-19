@@ -3,6 +3,10 @@
 -- Results must be sorted in ascending order by cities.id
 -- You are not allowed to use the JOIN keyword
 
-SELECT cities ASC
-FROM  states
-WHERE name = California
+SELECT id, name
+FROM  cities
+WHERE state_id IN(
+		SELECT id
+		FROM states
+		WHERE name = 'California')
+ORDER BY id;
