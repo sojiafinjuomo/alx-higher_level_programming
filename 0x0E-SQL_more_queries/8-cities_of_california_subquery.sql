@@ -4,5 +4,5 @@
 -- You are not allowed to use the JOIN keyword
 
 SELECT cities ASC
-FROM TABLE states
+FROM  states
 WHERE name = California
