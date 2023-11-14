@@ -2,7 +2,7 @@
 const myArray = [
   'C is fun',
   'Python is cool',
-  'Javascript is amazing'
+  'JavaScript is amazing'
 ];
 for (let i = 0; i < myArray.length; i++) {
   console.log(myArray[i]);
