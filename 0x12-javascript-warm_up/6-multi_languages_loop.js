@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const myArray = [
+let myArray = [
   'C is fun',
   'Python is cool',
   'Javascript is amazing'
